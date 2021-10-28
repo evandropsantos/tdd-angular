@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LikeWidgetModule } from './components/like-widget/like-widget.module';
+import { LikeWidgetModule } from './shared/components/like-widget/like-widget.module';
+import { PhotoFrameModule } from './shared/components/photo-frame/photo-frame.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { LikeWidgetModule } from './components/like-widget/like-widget.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LikeWidgetModule
+    LikeWidgetModule,
+    PhotoFrameModule
   ],
   providers: [],
   bootstrap: [AppComponent]
